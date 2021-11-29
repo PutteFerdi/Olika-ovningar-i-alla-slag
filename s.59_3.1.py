@@ -1,18 +1,14 @@
-svar = input("Hur många minuter uppskattar du att du ringer per månad? ")
+uppskattade_minuter = int(input("Hur många minuter uppskattar du att du ringer per månad? "))
 
-if svar < "33":
+if uppskattade_minuter < 33:
     print("Du bör välja abonnemanget KONTANT")
     print("Du ringer inte så mycket")
 
-if svar == "33":
-    print("Du bör välja abonnemanget KONTANT")
-    print("Du ringer inte så mycket")
-
-if svar > "33" < "67":
+elif uppskattade_minuter > 33 and uppskattade_minuter < 66:
     print("Du bör välja abonnemanget Normal")
     print("Du ringer lika mycket som dom flesta")
 
-if svar > "66":
+else:
     print("Du bör välja abonnemanget PLUS")
     print("Du ringer väldigt mycket")
 
